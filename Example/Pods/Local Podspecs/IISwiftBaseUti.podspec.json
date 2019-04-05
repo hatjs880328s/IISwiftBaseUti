@@ -1,6 +1,6 @@
 {
   "name": "IISwiftBaseUti",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "IISwift基础服务",
   "description": "包含：\n1.多种破次方排序方法（heapsort/mergesort)\n2.自定义轻量级队列（IIQueue)\n3.GCD二次封装（GCGUtils）",
   "homepage": "https://github.com/hatjs880328s/IISwiftBaseUti",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IISwiftBaseUti.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

@@ -1,5 +1,5 @@
 PODS:
-  - IISwiftBaseUti (0.1.0)
+  - IISwiftBaseUti (0.2.0)
 
 DEPENDENCIES:
   - IISwiftBaseUti (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IISwiftBaseUti: 21694707722ae174e575fc5339b4a84c969a84a0
+  IISwiftBaseUti: 761b35f02d78db33b28af1d3dbbb29921e4bbdec
 
 PODFILE CHECKSUM: e7e31cda7e1040427caf87360e3b0b1e70932e1e
 
