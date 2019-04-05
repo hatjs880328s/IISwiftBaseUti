@@ -26,7 +26,7 @@ import UIKit
  HeapSort是不稳定排序<排序前俩相同的元素AB,排序后，他俩顺序不变则表示稳定>
  */
 
-enum HeapSortType: Int {
+public enum HeapSortType: Int {
     case asc
     case desc
 }

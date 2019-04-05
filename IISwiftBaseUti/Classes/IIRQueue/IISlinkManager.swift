@@ -27,7 +27,7 @@ import Foundation
  - LowLevel:      low
  - VeryHighLevel: v-high
  */
-enum PriorityLevel {
+public enum PriorityLevel {
     case HighLevel, NormalLevel, LowLevel, VeryHighLevel
 }
 
@@ -41,18 +41,18 @@ enum PriorityLevel {
 ///  ...
 ///  set task lvl √
 
-class IISlinkManager {
+public class IISlinkManager {
     
     /// if progress task now
-    var ifprogressNow = false
+    public var ifprogressNow = false
     
     /// recursive-lock
-    let DG_LOCK = NSRecursiveLock()
+    public let DG_LOCK = NSRecursiveLock()
     
     /// task - arr
-    var TASK_ARRAY: Array<IITaskModel> = []
+    public var TASK_ARRAY: Array<IITaskModel> = []
     
-    init(linkname: String) {
+    public init(linkname: String) {
         
     }
     
@@ -84,7 +84,7 @@ class IISlinkManager {
      
      - parameter task: task
      */
-    func addTask(task: IITaskModel) {
+    public func addTask(task: IITaskModel) {
         self.DG_LOCK.lock()
         self.TASK_ARRAY.append(task)
         self.TASK_ARRAY = IIMergeSort.sort(array: self.TASK_ARRAY)
@@ -101,7 +101,7 @@ class IISlinkManager {
      
      - parameter Index: task index in task - arr
      */
-    func removeOnetask(Index: Int) {
+    public func removeOnetask(Index: Int) {
         if Index == 0 {
             self.TASK_ARRAY.removeFirst()
         }
@@ -113,7 +113,7 @@ class IISlinkManager {
      - parameter level   : lvl
      - parameter taskName: task name (uuid)
      */
-    func setPriorityLevel(level: Int, taskName: String = "") {
+    public func setPriorityLevel(level: Int, taskName: String = "") {
         self.DG_LOCK.lock()
         for (item, _) in self.TASK_ARRAY.enumerated() {
             if TASK_ARRAY[item].taskname == taskName {

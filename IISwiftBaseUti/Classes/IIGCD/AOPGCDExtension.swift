@@ -20,7 +20,7 @@
 import Foundation
 
 /// dispatch - once function
-extension DispatchQueue {
+public extension DispatchQueue {
     static var onceDic: [String: String] = [:]
     static func once(taskid: String, action:() -> Void) {
         objc_sync_enter(self)
@@ -35,7 +35,7 @@ extension DispatchQueue {
     }
 }
 
-class GCDUtils: NSObject {
+public class GCDUtils: NSObject {
     
     /**
      delay progress - success return main thread  [seconds]
@@ -43,7 +43,7 @@ class GCDUtils: NSObject {
      - parameter delayTime:   time-second
      - parameter yourFuncton: action
      */
-    @objc class func delayProgress(delayTime: Int, yourFuncton:@escaping () -> Void) {
+    @objc public class func delayProgress(delayTime: Int, yourFuncton:@escaping () -> Void) {
         let delay = DispatchTime.now() + DispatchTimeInterval.seconds(delayTime)
         DispatchQueue.main.asyncAfter(deadline: delay) {
             yourFuncton()
@@ -55,7 +55,7 @@ class GCDUtils: NSObject {
     /// - Parameters:
     ///   - milliseconds:  1s = 1000ms
     ///   - yourFunc: function
-    @objc class func delayProgerssWithFloatSec(milliseconds: Int, yourFunc:@escaping () -> Void) {
+    @objc public class func delayProgerssWithFloatSec(milliseconds: Int, yourFunc:@escaping () -> Void) {
         let delay = DispatchTime.now() + DispatchTimeInterval.milliseconds(milliseconds)
         DispatchQueue.main.asyncAfter(deadline: delay) {
             yourFunc()
@@ -67,7 +67,7 @@ class GCDUtils: NSObject {
      
      - parameter youraction: action
      */
-    class func toMianThreadProgressSome(youraction:@escaping () -> Void) {
+    public class func toMianThreadProgressSome(youraction:@escaping () -> Void) {
         DispatchQueue.main.async {
             youraction()
         }
@@ -80,7 +80,7 @@ class GCDUtils: NSObject {
      - parameter asyncDispathchFunc:  action
      - parameter endMainDispatchFunc: defer in main thread do it.
      */
-    class func asyncProgress(dispatchLevel: Int, asyncDispathchFunc:@escaping () -> Void, endMainDispatchFunc:@escaping () -> Void) {
+    public class func asyncProgress(dispatchLevel: Int, asyncDispathchFunc:@escaping () -> Void, endMainDispatchFunc:@escaping () -> Void) {
         var level: DispatchQoS.QoSClass?
         if(dispatchLevel == 1) {
             level = DispatchQoS.QoSClass.userInteractive
@@ -100,7 +100,7 @@ class GCDUtils: NSObject {
     }
     
     /// custom-thread,async progress item
-    class func asyncCustomThread(threadName: String, asyncDispathchFunc:@escaping () -> Void, endMainDispatchFunc:@escaping () -> Void) {
+    public class func asyncCustomThread(threadName: String, asyncDispathchFunc:@escaping () -> Void, endMainDispatchFunc:@escaping () -> Void) {
         let disOne = DispatchQueue(label: threadName)
         disOne.async {
             asyncDispathchFunc()
@@ -111,7 +111,7 @@ class GCDUtils: NSObject {
     }
     
     /// custom-thread,async progress item
-    @objc class func syncCustomThread(threadName: String, syncDispathchFunc:@escaping () -> Void, endMainDispatchFunc:@escaping () -> Void) {
+    @objc public class func syncCustomThread(threadName: String, syncDispathchFunc:@escaping () -> Void, endMainDispatchFunc:@escaping () -> Void) {
         let disOne = DispatchQueue(label: threadName)
         disOne.sync {
             syncDispathchFunc()
@@ -127,7 +127,7 @@ class GCDUtils: NSObject {
      - parameter endMainDispatchFunc: main thread do it last
      - parameter asyncDispicth:       thread
      */
-    class func asyncSomeProgressThenDeelInmainqueue(endMainDispatchFunc:@escaping () -> Void, asyfuncOne:@escaping () -> Void, asyfuncTwo:@escaping (_ actionone:() -> Void) -> Void) {
+    public class func asyncSomeProgressThenDeelInmainqueue(endMainDispatchFunc:@escaping () -> Void, asyfuncOne:@escaping () -> Void, asyfuncTwo:@escaping (_ actionone:() -> Void) -> Void) {
         var flagOne = 0
         var flagTwo = 0
         DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async {
@@ -158,7 +158,7 @@ class GCDUtils: NSObject {
      - parameter thirdDispatch:  three-task
      - parameter others:         others-task
      */
-    class func dispatchAsyncChuan(firstDispatch:@escaping () -> Void, secondDispatch:@escaping () -> Void, thirdDispatch:@escaping () -> Void, others:() -> Void...) {
+    public class func dispatchAsyncChuan(firstDispatch:@escaping () -> Void, secondDispatch:@escaping () -> Void, thirdDispatch:@escaping () -> Void, others:() -> Void...) {
         let groupDispatch: DispatchGroup = DispatchGroup()
         let dispatchAsy = DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive)
         groupDispatch.enter()
@@ -187,7 +187,7 @@ class GCDUtils: NSObject {
      - parameter thirdDispatch:  task
      - parameter others:         others
      */
-    class func dispatchAsyncBing(firstDispatch:@escaping () -> Void, secondDispatch:@escaping () -> Void, thirdDispatch:@escaping () -> Void, others:() -> Void...) {
+    public class func dispatchAsyncBing(firstDispatch:@escaping () -> Void, secondDispatch:@escaping () -> Void, thirdDispatch:@escaping () -> Void, others:() -> Void...) {
         let groupDispatch: DispatchGroup = DispatchGroup()
         let dispatchAsy = DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive)
         groupDispatch.enter()
@@ -216,7 +216,7 @@ class GCDUtils: NSObject {
     ///   - actionOne: one-task
     ///   - actionTwo: two-task
     ///   - endAction: endAction
-    class func someFuncitonEndTogether(actionOne:@escaping () -> Void, actionTwo:@escaping () -> Void, endAction:() -> Void) {
+    public class func someFuncitonEndTogether(actionOne:@escaping () -> Void, actionTwo:@escaping () -> Void, endAction:() -> Void) {
         let disGp = DispatchGroup()
         let disOne = DispatchQueue(label: "one")
         let itemOne = DispatchWorkItem(block: actionOne)
@@ -232,7 +232,7 @@ class GCDUtils: NSObject {
     
     /// multi-action progress in multi-thread
     /// timout-default is 20s
-    class func threadGroupAction(timeoutAction: () -> Void, successAction:() -> Void, actions: (() -> Void)...) {
+    public class func threadGroupAction(timeoutAction: () -> Void, successAction:() -> Void, actions: (() -> Void)...) {
         let disGroup = DispatchGroup()
         let disGroupName = NSUUID().uuidString
         for item in actions {
@@ -249,9 +249,9 @@ class GCDUtils: NSObject {
     }
     
     /// limit async item in one thread - progress[default is 3]
-    static let limitqueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
-    static let semap = DispatchSemaphore(value: 1)
-    class func limitThreadCountAsyncProgress(asyncAction: @escaping () -> Void, mainEndAction:@escaping () -> Void) {
+    public static let limitqueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
+    public static let semap = DispatchSemaphore(value: 1)
+    public class func limitThreadCountAsyncProgress(asyncAction: @escaping () -> Void, mainEndAction:@escaping () -> Void) {
         limitqueue.async {
             semap.wait()
             asyncAction()

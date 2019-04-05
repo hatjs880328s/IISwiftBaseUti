@@ -19,7 +19,7 @@
 
 import Foundation
 
-class IIMergeSort<T: Comparable> {
+public class IIMergeSort<T: Comparable> {
     
     /// step - insert sort
     /// two sorted arrs, use insert sort method
@@ -122,7 +122,7 @@ class IIMergeSort<T: Comparable> {
     ///
     /// - Parameter array: origin arr
     /// - Returns: result
-    class func sort(array: [T], sortState: String = "asc") -> [T] {
+    public class func sort(array: [T], sortState: String = "asc") -> [T] {
         let info = sepAllnumberToarray(array: array)
         if info.count == 0 { return array }
         return combineArray(arrays: info, sortState: sortState)

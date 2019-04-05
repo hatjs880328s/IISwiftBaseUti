@@ -21,16 +21,16 @@ import UIKit
 import Foundation
 
 /// task-model
-class IITaskModel: Comparable {
+public class IITaskModel: Comparable {
     
     /// task-content
-    var taskContext:(() -> Bool)?
+    public var taskContext:(() -> Bool)?
     
     /// task - name  use : nsuuid().stringuuid
-    var taskname: String?
+    public var taskname: String?
     
     /// task lvl [1high-5low]
-    var taskLevel: Int = 5
+    public var taskLevel: Int = 5
     
     /**
      alloc
@@ -41,7 +41,7 @@ class IITaskModel: Comparable {
      
      - returns: self
      */
-    init(taskinfo: @escaping () -> Bool, taskname: String, taskLevel: Int = 5) {
+    public init(taskinfo: @escaping () -> Bool, taskname: String, taskLevel: Int = 5) {
         self.taskContext = taskinfo
         self.taskname = taskname
         self.taskLevel = taskLevel
@@ -50,14 +50,14 @@ class IITaskModel: Comparable {
     /**
      execute the tasks
      */
-    func exeFunc() {
+    public func exeFunc() {
         let successorFail = self.taskContext!()
         if !successorFail {
             print("boom")
         }
     }
     
-    static func == (fis: IITaskModel, ses: IITaskModel) -> Bool {
+    public static func == (fis: IITaskModel, ses: IITaskModel) -> Bool {
         return fis.taskname == ses.taskname
     }
     
