@@ -1,0 +1,6 @@
+framework module Pods_IISwiftBaseUti_Tests {
+  umbrella header "Pods-IISwiftBaseUti_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

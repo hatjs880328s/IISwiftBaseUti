@@ -1,0 +1,16 @@
+PODS:
+  - IISwiftBaseUti (0.1.0)
+
+DEPENDENCIES:
+  - IISwiftBaseUti (from `../`)
+
+EXTERNAL SOURCES:
+  IISwiftBaseUti:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IISwiftBaseUti: a21e6688080ce84ac04b32bf902e9a49a4af7cba
+
+PODFILE CHECKSUM: e7e31cda7e1040427caf87360e3b0b1e70932e1e
+
+COCOAPODS: 1.6.0.beta.2
