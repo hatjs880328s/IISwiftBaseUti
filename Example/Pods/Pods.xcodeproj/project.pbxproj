@@ -20,7 +20,6 @@
 		7E211D80E75B8322519E5FA61F3B3933 /* IISwiftBaseUti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B863E73EDAC06A70E5BA86622D0B552 /* IISwiftBaseUti-dummy.m */; };
 		8A58690B1F7557965625E66C5041261C /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E450DBBB8875A409E235FABF61F07 /* HeapSort.swift */; };
 		9BBEDBC524EB28EE331E38F35E67FBA7 /* III18N-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5765F7D04C0AF77DF3FC6A7569706B62 /* III18N-dummy.m */; };
-		AB379113227C6A2679971E81774ED8D6 /* IIL18NService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A6013CD12433596FB58819A9A9BAF /* IIL18NService.swift */; };
 		B3F1CC920BD0A85B563A5B6B1DBC7918 /* IISwiftBaseUti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A11DDA0970E6E841415B86D51A05BF /* IISwiftBaseUti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA6FDCEFE8EED9B245F151FD56466DFA /* IIWhiteListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70E98C37F984CC991F62618F2505F41 /* IIWhiteListModule.swift */; };
 		CD17FCEEA029D240B2D594A0D8469CBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7743E7624BFD194D026711E1E72BBE23 /* Foundation.framework */; };
@@ -64,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		1956D0E7C68FC4C714973A7F3893A38E /* IISwiftBaseUti.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IISwiftBaseUti.xcconfig; sourceTree = "<group>"; };
-		212A6013CD12433596FB58819A9A9BAF /* IIL18NService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IIL18NService.swift; sourceTree = "<group>"; };
 		23570A56F02D965B0623E936738F2BA7 /* IIMergeSort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IIMergeSort.swift; sourceTree = "<group>"; };
 		29E22CE5E5EDCEFCF04CE324341B7732 /* IMPI18N.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMPI18N.h; path = III18N/Classes/IMPI18N.h; sourceTree = "<group>"; };
 		2B11288A46843D0AB28DFB2DED7B4494 /* III18N-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "III18N-prefix.pch"; sourceTree = "<group>"; };
@@ -81,20 +79,20 @@
 		5BA16C9762D5CA2DF45590484751F49A /* IISlinkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IISlinkManager.swift; sourceTree = "<group>"; };
 		70BC9E2A1DA9877529B3CEF0DE30B568 /* Pods-IISwiftBaseUti_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IISwiftBaseUti_Tests-dummy.m"; sourceTree = "<group>"; };
 		7743E7624BFD194D026711E1E72BBE23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		790890D5996B54361A08D77AD48D84DE /* III18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = III18N.framework; path = III18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8376BCBBE25CADC70FB47200713AF1AA /* IISwiftBaseUti.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IISwiftBaseUti.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		790890D5996B54361A08D77AD48D84DE /* III18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = III18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8376BCBBE25CADC70FB47200713AF1AA /* IISwiftBaseUti.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = IISwiftBaseUti.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8A77C97C901C17ED23076C03DB0B4AFB /* Pods-IISwiftBaseUti_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IISwiftBaseUti_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8E4DCE88CA33610736BE3BC5C88491D3 /* Pods-IISwiftBaseUti_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IISwiftBaseUti_Example-umbrella.h"; sourceTree = "<group>"; };
 		9294A2DE2297F4D21DAD24EB376130AE /* AOPGCDExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AOPGCDExtension.swift; sourceTree = "<group>"; };
 		9589D311FCC85964BC43EF204F7BE893 /* IISwiftBaseUti.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IISwiftBaseUti.modulemap; sourceTree = "<group>"; };
-		97626D548E9B957DFA222B94A49D75BB /* Pods_IISwiftBaseUti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IISwiftBaseUti_Tests.framework; path = "Pods-IISwiftBaseUti_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97626D548E9B957DFA222B94A49D75BB /* Pods_IISwiftBaseUti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IISwiftBaseUti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6AE95CE7F2EE8FDA4B6C5282A7056B /* III18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = III18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FDC2ADE5FA812025316BC9C388B5CC3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9FDC2ADE5FA812025316BC9C388B5CC3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A70E98C37F984CC991F62618F2505F41 /* IIWhiteListModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IIWhiteListModule.swift; sourceTree = "<group>"; };
 		AAD0510AC0EB763A0EC11C4AEC15F48D /* IITaskModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IITaskModel.swift; sourceTree = "<group>"; };
-		B25BB3E437FBBBC95A932BD542D9017C /* Pods_IISwiftBaseUti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IISwiftBaseUti_Example.framework; path = "Pods-IISwiftBaseUti_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25BB3E437FBBBC95A932BD542D9017C /* Pods_IISwiftBaseUti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IISwiftBaseUti_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28211C617C69E71CB7A34483C3E4779 /* Pods-IISwiftBaseUti_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IISwiftBaseUti_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B58BB7E7D46FB109E09B6890712B2D7F /* Pods-IISwiftBaseUti_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IISwiftBaseUti_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B77E8BEDB4C3DD260A6DF34653F532A0 /* IISwiftBaseUti-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IISwiftBaseUti-prefix.pch"; sourceTree = "<group>"; };
 		BF34C8EEC1176D59F2091630D404FC23 /* Pods-IISwiftBaseUti_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IISwiftBaseUti_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,9 +101,9 @@
 		DB290629132CE300C5DE43327AE3B2F1 /* Pods-IISwiftBaseUti_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IISwiftBaseUti_Example.modulemap"; sourceTree = "<group>"; };
 		DF0E450DBBB8875A409E235FABF61F07 /* HeapSort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		E16B24EAFE3763646B3CF1FA0CA53EFD /* Pods-IISwiftBaseUti_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IISwiftBaseUti_Tests.modulemap"; sourceTree = "<group>"; };
-		E8507EC2E5E55B1D3990954C05E37CC1 /* IISwiftBaseUti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IISwiftBaseUti.framework; path = IISwiftBaseUti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8507EC2E5E55B1D3990954C05E37CC1 /* IISwiftBaseUti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IISwiftBaseUti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDADBAFFFB54C633CEBFEE8CFDA3E4E7 /* III18N.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = III18N.xcconfig; sourceTree = "<group>"; };
-		EE053445F382C459689743D4696E952E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EE053445F382C459689743D4696E952E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EE1C80C05650E85A2CBC411578B52A04 /* Pods-IISwiftBaseUti_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IISwiftBaseUti_Example-dummy.m"; sourceTree = "<group>"; };
 		EE5FBC65058504B2695CB30DE542CE66 /* III18N.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = III18N.modulemap; sourceTree = "<group>"; };
 		F188A8B3BD2AE4041EC4F4A2FAF099BA /* III18N-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "III18N-Info.plist"; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 				D43201AB2431D0B9561E423E5AD58CB1 /* IMPI18N.m */,
 				C4927AECB0FB65C1577A7AD4B1039A17 /* Support Files */,
 			);
-			name = III18N;
 			path = III18N;
 			sourceTree = "<group>";
 		};
@@ -213,22 +210,12 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6E00CE99C656A265F7280E3B5B25CC2A /* IISwiftI18N */ = {
-			isa = PBXGroup;
-			children = (
-				212A6013CD12433596FB58819A9A9BAF /* IIL18NService.swift */,
-			);
-			name = IISwiftI18N;
-			path = IISwiftBaseUti/Classes/IISwiftI18N;
-			sourceTree = "<group>";
-		};
 		6F61866E8DD50DACFB01303E5A542C4D /* IISwiftBaseUti */ = {
 			isa = PBXGroup;
 			children = (
 				21A55D20FDB19476A213913511DFB62B /* IIGCD */,
 				71090282B0E5D847A568A5E8E55F4714 /* IIMergeSort */,
 				5C7A673DC50E851D570ED18C44ED5161 /* IIRQueue */,
-				6E00CE99C656A265F7280E3B5B25CC2A /* IISwiftI18N */,
 				CCFE4D242D8EC48BAC32E8320AC36F7D /* IIWhiteListModule */,
 				DC62CF3FDBACEE4A3204AACE041C0133 /* Pod */,
 				D88BD5155BD47672121F7E6DD406CCC9 /* Support Files */,
@@ -566,7 +553,6 @@
 			files = (
 				DED120C78CDAE72B67AAAA2000081DFC /* AOPGCDExtension.swift in Sources */,
 				8A58690B1F7557965625E66C5041261C /* HeapSort.swift in Sources */,
-				AB379113227C6A2679971E81774ED8D6 /* IIL18NService.swift in Sources */,
 				49A18808255B985AEFB75A75BF19DC5E /* IIMergeSort.swift in Sources */,
 				4AD0A26F58FC712FED8385F36308FCA2 /* IISlinkManager.swift in Sources */,
 				7E211D80E75B8322519E5FA61F3B3933 /* IISwiftBaseUti-dummy.m in Sources */,
@@ -789,8 +775,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
