@@ -1,22 +1,15 @@
 PODS:
-  - III18N (0.1.0)
-  - IISwiftBaseUti (0.3.0):
-    - III18N
+  - IISwiftBaseUti (0.6.0)
 
 DEPENDENCIES:
   - IISwiftBaseUti (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - III18N
 
 EXTERNAL SOURCES:
   IISwiftBaseUti:
     :path: "../"
 
 SPEC CHECKSUMS:
-  III18N: ccafbd3ebd7f6457cc2203d6b65a6146820c651c
-  IISwiftBaseUti: 005b4c80830787a1277436dd4d10e12632bb055f
+  IISwiftBaseUti: e6eb394891e77bfcaeeb8fd118030bd22c2da9b4
 
 PODFILE CHECKSUM: e7e31cda7e1040427caf87360e3b0b1e70932e1e
 
