@@ -1,6 +1,5 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
-#import "IMPI18N.h"
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
@@ -10,4 +9,9 @@
 #endif
 #endif
 #endif
+
+#import "IMPI18N.h"
+
+FOUNDATION_EXPORT double III18NVersionNumber;
+FOUNDATION_EXPORT const unsigned char III18NVersionString[];
 
