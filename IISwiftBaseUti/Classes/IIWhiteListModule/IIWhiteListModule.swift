@@ -12,16 +12,16 @@
 
 import Foundation
 
-@objc enum IIWhiteListEnum: Int {
+@objc public enum IIWhiteListEnum: Int {
     case AOPNBPWhiteModule
     case ScreenShotClassWhiteModule
 }
 
-@objc class IIWhiteListModule: NSObject {
+@objc public class IIWhiteListModule: NSObject {
     
-    var whiteListModules: [IIWhiteListEnum: IIWhiteModuleFather] = [:]
+    public var whiteListModules: [IIWhiteListEnum: IIWhiteModuleFather] = [:]
     
-    override init() {
+    public override init() {
         super.init()
         addNewListModule()
     }
@@ -49,21 +49,21 @@ import Foundation
 }
 
 /// 白名单区域父类
-class IIWhiteModuleFather: NSObject {
-    var list: [String] = []
+public class IIWhiteModuleFather: NSObject {
+    public var list: [String] = []
     
-    override init() {
+    public override init() {
         super.init()
         addItems()
     }
     
-    func addItems() {}
+    public func addItems() {}
 }
 
 /// 为aop-nbp库设置的白名单
-class AOPNBPWhiteModule: IIWhiteModuleFather {
+public class AOPNBPWhiteModule: IIWhiteModuleFather {
     
-    override func addItems() {
+    public override func addItems() {
         super.list.append("15339967446")
         super.list.append("15194181120")
         super.list.append("18615692886")
@@ -72,8 +72,8 @@ class AOPNBPWhiteModule: IIWhiteModuleFather {
 }
 
 /// 防止截屏设置的白名单
-class ScreenShotClassWhiteModule: IIWhiteModuleFather {
-    override func addItems() {
+public class ScreenShotClassWhiteModule: IIWhiteModuleFather {
+    public override func addItems() {
         super.list.append("OpenWebviewViewController")
         super.list.append("NewsDetailComViewController")
         super.list.append("NewsComViewController")
