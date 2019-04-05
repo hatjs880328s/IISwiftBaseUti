@@ -11,6 +11,7 @@
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ** * * * *
 
 import Foundation
+import III18N
 
 /// 国际化字符串获取
 func getL18NStr(key: String, value: String = "", table: String? = nil) -> String {
