@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		363FA94FA8DAD1FE86702CC5E87AF895 /* IISwiftBaseUti-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE0DE4BD15E97729EB6983D4E92BD7 /* IISwiftBaseUti-dummy.m */; };
 		3B952B52E4ED6B59C402F20052A97C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		56F550B72256F71F00454590 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550B02256F71F00454590 /* HeapSort.swift */; };
-		56F550B82256F71F00454590 /* IIMergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550B12256F71F00454590 /* IIMergeSort.swift */; };
-		56F550B92256F71F00454590 /* IITaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550B32256F71F00454590 /* IITaskModel.swift */; };
-		56F550BA2256F71F00454590 /* IISlinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550B42256F71F00454590 /* IISlinkManager.swift */; };
-		56F550BB2256F71F00454590 /* AOPGCDExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550B62256F71F00454590 /* AOPGCDExtension.swift */; };
+		56F550C42256F8A600454590 /* IITaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550BD2256F8A600454590 /* IITaskModel.swift */; };
+		56F550C52256F8A600454590 /* IISlinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550BE2256F8A600454590 /* IISlinkManager.swift */; };
+		56F550C62256F8A600454590 /* AOPGCDExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550C02256F8A600454590 /* AOPGCDExtension.swift */; };
+		56F550C72256F8A600454590 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550C22256F8A600454590 /* HeapSort.swift */; };
+		56F550C82256F8A600454590 /* IIMergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F550C32256F8A600454590 /* IIMergeSort.swift */; };
 		7BD69CDEC5CBDD927BD15C7DA6C5C9CB /* Pods-IISwiftBaseUti_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B58BB7E7D46FB109E09B6890712B2D7F /* Pods-IISwiftBaseUti_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89ADB7D255524801CB5B82C1C26A4FA9 /* IISwiftBaseUti-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D69BA01C94DE873484E1CFAAC751A500 /* IISwiftBaseUti-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B770C8E6CF907196A1B6C2B96880E5DD /* Pods-IISwiftBaseUti_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4DCE88CA33610736BE3BC5C88491D3 /* Pods-IISwiftBaseUti_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,11 +51,11 @@
 		532A6CFB672FFDB785030B0FA5578D21 /* Pods-IISwiftBaseUti_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IISwiftBaseUti_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5481BDE1016AB7A57D59848B9D2A3AEB /* Pods-IISwiftBaseUti_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IISwiftBaseUti_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		55104E79B6AC5C7E24B8786FE90AAA99 /* Pods_IISwiftBaseUti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IISwiftBaseUti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56F550B02256F71F00454590 /* HeapSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
-		56F550B12256F71F00454590 /* IIMergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIMergeSort.swift; sourceTree = "<group>"; };
-		56F550B32256F71F00454590 /* IITaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IITaskModel.swift; sourceTree = "<group>"; };
-		56F550B42256F71F00454590 /* IISlinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IISlinkManager.swift; sourceTree = "<group>"; };
-		56F550B62256F71F00454590 /* AOPGCDExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AOPGCDExtension.swift; sourceTree = "<group>"; };
+		56F550BD2256F8A600454590 /* IITaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IITaskModel.swift; sourceTree = "<group>"; };
+		56F550BE2256F8A600454590 /* IISlinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IISlinkManager.swift; sourceTree = "<group>"; };
+		56F550C02256F8A600454590 /* AOPGCDExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AOPGCDExtension.swift; sourceTree = "<group>"; };
+		56F550C22256F8A600454590 /* HeapSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
+		56F550C32256F8A600454590 /* IIMergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIMergeSort.swift; sourceTree = "<group>"; };
 		70BC9E2A1DA9877529B3CEF0DE30B568 /* Pods-IISwiftBaseUti_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IISwiftBaseUti_Tests-dummy.m"; sourceTree = "<group>"; };
 		7737C7F6CFA4093A03E446FBACDA7623 /* IISwiftBaseUti.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = IISwiftBaseUti.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		791165A810F5FC174806CCCC12BA5181 /* Pods_IISwiftBaseUti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IISwiftBaseUti_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,30 +168,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		56F550AF2256F71F00454590 /* IIMergeSort */ = {
+		56F550BC2256F8A600454590 /* IIRQueue */ = {
 			isa = PBXGroup;
 			children = (
-				56F550B02256F71F00454590 /* HeapSort.swift */,
-				56F550B12256F71F00454590 /* IIMergeSort.swift */,
+				56F550BD2256F8A600454590 /* IITaskModel.swift */,
+				56F550BE2256F8A600454590 /* IISlinkManager.swift */,
 			);
-			path = IIMergeSort;
+			name = IIRQueue;
+			path = IISwiftBaseUti/Classes/IIRQueue;
 			sourceTree = "<group>";
 		};
-		56F550B22256F71F00454590 /* IIRQueue */ = {
+		56F550BF2256F8A600454590 /* IIGCD */ = {
 			isa = PBXGroup;
 			children = (
-				56F550B32256F71F00454590 /* IITaskModel.swift */,
-				56F550B42256F71F00454590 /* IISlinkManager.swift */,
+				56F550C02256F8A600454590 /* AOPGCDExtension.swift */,
 			);
-			path = IIRQueue;
+			name = IIGCD;
+			path = IISwiftBaseUti/Classes/IIGCD;
 			sourceTree = "<group>";
 		};
-		56F550B52256F71F00454590 /* IIGCD */ = {
+		56F550C12256F8A600454590 /* IIMergeSort */ = {
 			isa = PBXGroup;
 			children = (
-				56F550B62256F71F00454590 /* AOPGCDExtension.swift */,
+				56F550C22256F8A600454590 /* HeapSort.swift */,
+				56F550C32256F8A600454590 /* IIMergeSort.swift */,
 			);
-			path = IIGCD;
+			name = IIMergeSort;
+			path = IISwiftBaseUti/Classes/IIMergeSort;
 			sourceTree = "<group>";
 		};
 		7C5492273314FA191C8220F53407B29B /* Pods-IISwiftBaseUti_Example */ = {
@@ -247,9 +250,9 @@
 		FB57799DDB37DCADF90F1EB185657800 /* IISwiftBaseUti */ = {
 			isa = PBXGroup;
 			children = (
-				56F550B52256F71F00454590 /* IIGCD */,
-				56F550AF2256F71F00454590 /* IIMergeSort */,
-				56F550B22256F71F00454590 /* IIRQueue */,
+				56F550BF2256F8A600454590 /* IIGCD */,
+				56F550C12256F8A600454590 /* IIMergeSort */,
+				56F550BC2256F8A600454590 /* IIRQueue */,
 				296B7593344B6DA369A2F6BC5666ACBC /* Pod */,
 				C28822DB17EB3EFBA44A516BE8DC2551 /* Support Files */,
 			);
@@ -400,12 +403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F550B82256F71F00454590 /* IIMergeSort.swift in Sources */,
-				56F550BA2256F71F00454590 /* IISlinkManager.swift in Sources */,
+				56F550C82256F8A600454590 /* IIMergeSort.swift in Sources */,
+				56F550C52256F8A600454590 /* IISlinkManager.swift in Sources */,
+				56F550C42256F8A600454590 /* IITaskModel.swift in Sources */,
 				363FA94FA8DAD1FE86702CC5E87AF895 /* IISwiftBaseUti-dummy.m in Sources */,
-				56F550B92256F71F00454590 /* IITaskModel.swift in Sources */,
-				56F550B72256F71F00454590 /* HeapSort.swift in Sources */,
-				56F550BB2256F71F00454590 /* AOPGCDExtension.swift in Sources */,
+				56F550C62256F8A600454590 /* AOPGCDExtension.swift in Sources */,
+				56F550C72256F8A600454590 /* HeapSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
