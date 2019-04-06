@@ -13,17 +13,9 @@
 import UIKit
 
 /*
- HeapSort-堆排序
- 思路：
- 1.如果最终结果需要是升序，则需要使用大顶堆（根最大），反之使用小顶堆（根最小）]
-
- 2.实现思路：下面以升序为例
- a.将无需数组构造为一个堆结构[还是在数组中表示]
- b.然后将根节点和最末尾的节点交换位置
- c.交过位置过后，再次生成一个堆结构（排除最末尾最大的那个节点）
- d.再次将根（最大值）和堆中最末尾交换  重复cd两步
-
- HeapSort是不稳定排序<排序前俩相同的元素AB,排序后，他俩顺序不变则表示稳定>
+ HeapSort
+ TODO：
+ HeapSort - non-Stable sort
  */
 
 public enum HeapSortType: Int {
@@ -31,7 +23,7 @@ public enum HeapSortType: Int {
     case desc
 }
 
-/// 私有拓展
+/// private extension for Int-swift
 private extension Int {
 
     var parent: Int {

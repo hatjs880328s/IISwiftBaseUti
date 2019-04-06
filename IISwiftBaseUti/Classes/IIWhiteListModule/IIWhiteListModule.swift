@@ -26,13 +26,13 @@ import Foundation
         addNewListModule()
     }
     
-    /// 添加一个新的白名单区域
+    /// add new white module
     private func addNewListModule() {
         self.whiteListModules[IIWhiteListEnum.AOPNBPWhiteModule] = AOPNBPWhiteModule()
         self.whiteListModules[IIWhiteListEnum.ScreenShotClassWhiteModule] = ScreenShotClassWhiteModule()
     }
     
-    /// 在某个白名单区域下获取是否存在这个key
+    /// get the value in the module
     @discardableResult
     @objc public func getRule(with key: String?, in table: IIWhiteListEnum) -> Bool {
         if key == nil { return false }
@@ -48,7 +48,6 @@ import Foundation
     
 }
 
-/// 白名单区域父类
 public class IIWhiteModuleFather: NSObject {
     public var list: [String] = []
     
@@ -60,18 +59,15 @@ public class IIWhiteModuleFather: NSObject {
     public func addItems() {}
 }
 
-/// 为aop-nbp库设置的白名单
+/// aop - nbp white module
 public class AOPNBPWhiteModule: IIWhiteModuleFather {
     
     public override func addItems() {
-        super.list.append("15339967446")
-        super.list.append("15194181120")
-        super.list.append("18615692886")
-        super.list.append("18954541787")
+
     }
 }
 
-/// 防止截屏设置的白名单
+/// shotscreen white module
 public class ScreenShotClassWhiteModule: IIWhiteModuleFather {
     public override func addItems() {
         super.list.append("OpenWebviewViewController")
