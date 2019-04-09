@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Utilities.h"
 
 FOUNDATION_EXPORT double IISwiftBaseUtiVersionNumber;
 FOUNDATION_EXPORT const unsigned char IISwiftBaseUtiVersionString[];
