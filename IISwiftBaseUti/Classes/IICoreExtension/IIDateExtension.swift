@@ -667,4 +667,4 @@ public func < (lhs: Foundation.Date, rhs: Foundation.Date) -> Bool {
     return lhs.compare(rhs) == ComparisonResult.orderedAscending
 }
 
-public typealias Date = Foundation.Date
+//public typealias Date = Foundation.Date
