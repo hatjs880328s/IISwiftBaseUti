@@ -12,7 +12,7 @@
 
 import Foundation
 
-class IITextAndFontExtension: NSObject {
+public class IITextAndFontExtension: NSObject {
     
     /// 根据文字实际长度和需求长度返回合适的uifont[最多是几行]
     ///

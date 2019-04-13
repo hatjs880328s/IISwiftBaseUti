@@ -579,7 +579,7 @@ public func * (str: String, n: Int) -> String {
     return ""
 }
 
-extension String {
+public extension String {
     
     public func isMatch(_ regex: String, options: NSRegularExpression.Options) -> Bool {
         var exp: NSRegularExpression?
@@ -931,7 +931,7 @@ public extension String {
     
 }
 
-extension String {
+public extension String {
     
     /**
      根据类名生成实例对象
@@ -954,7 +954,7 @@ extension String {
 }
 
 // MARK: - 项目逻辑相关
-extension String {
+public extension String {
     
     /// 判定字符串是否是一个完整的URL
     public func isRealUrl() -> Bool {

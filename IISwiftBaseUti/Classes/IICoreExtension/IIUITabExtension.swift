@@ -14,7 +14,7 @@ import Foundation
 import SnapKit
 
 /// OOP处理空列表显示信息
-extension UITableView {
+public extension UITableView {
     public func iiExcEmailReload(isZeroCount: Bool, withNoTitle: String, imgName: String? = nil) {
         if isZeroCount {
             let emptyVw = IIExcTabEmptyVw(frame: CGRect.zero, nonTxt: withNoTitle, imgName: imgName)
@@ -28,22 +28,22 @@ extension UITableView {
     }
 }
 
-class IIUITabExtension {
+public class IIUITabExtension {
     static let aWeight = UIScreen.main.bounds.size.width
 }
 
 /// 邮箱列表空列表vw
-class IIExcTabEmptyVw: UIView {
+public class IIExcTabEmptyVw: UIView {
 
-    var createBtn = UIButton()
+    public var createBtn = UIButton()
 
-    var txtLb: UILabel = UILabel()
+    public var txtLb: UILabel = UILabel()
 
-    var showTitle: String = ""
+    public var showTitle: String = ""
 
-    var imgName: String?
+    public var imgName: String?
 
-    init(frame: CGRect, nonTxt: String, imgName: String? = nil) {
+    public init(frame: CGRect, nonTxt: String, imgName: String? = nil) {
         super.init(frame: frame)
         self.showTitle = nonTxt
         self.imgName = imgName
@@ -54,7 +54,7 @@ class IIExcTabEmptyVw: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func createVw() {
+    public func createVw() {
         let bgVw = UIView()
         self.addSubview(bgVw)
         bgVw.snp.makeConstraints { (make) in

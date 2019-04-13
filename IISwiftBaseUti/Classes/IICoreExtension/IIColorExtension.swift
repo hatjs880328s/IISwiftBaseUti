@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIColor {
+public extension UIColor {
     
     /// 根据RGB生成图片
     ///

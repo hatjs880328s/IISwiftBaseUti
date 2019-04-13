@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension Foundation.Date {
+public extension Foundation.Date {
     
     ///强制转换成字符串
     public func toString() -> String {

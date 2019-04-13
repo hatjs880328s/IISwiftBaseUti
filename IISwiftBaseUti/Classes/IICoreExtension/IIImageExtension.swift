@@ -20,7 +20,7 @@ import Foundation
  灰色主题： BlueTheme.bundle
  白色主题（默认） ： mainbundle
  */
-class IIImage: NSObject {
+public class IIImage: NSObject {
 
     @objc public var image: UIImage?
 

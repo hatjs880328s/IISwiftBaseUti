@@ -12,7 +12,7 @@
 
 import Foundation
 
-class IIAppExtension: NSObject {
+public class IIAppExtension: NSObject {
     
     /// 获取fatherview
     @objc public func getFatherVc(selfVc: UIViewController) -> UIViewController? {
@@ -25,7 +25,7 @@ class IIAppExtension: NSObject {
 }
 
 // MARK: - 获取正在显示的viewcontroller
-extension IIAppExtension {
+public extension IIAppExtension {
 
     @objc public func topViewController() -> UIViewController? {
         return self.topViewWithRootVC(rootVC: getCurrentWindow()?.rootViewController)
@@ -61,7 +61,7 @@ extension IIAppExtension {
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
 
     /// 设置controller的描述方法
     @objc public func customDescription() -> String {

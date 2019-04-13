@@ -1,11 +1,11 @@
 PODS:
-  - IISwiftBaseUti (1.0.0):
-    - IISwiftBaseUti/IIBaseUti (= 1.0.0)
-    - IISwiftBaseUti/IICoreExtension (= 1.0.0)
+  - IISwiftBaseUti (1.1.0):
+    - IISwiftBaseUti/IIBaseUti (= 1.1.0)
+    - IISwiftBaseUti/IICoreExtension (= 1.1.0)
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIBaseUti (1.0.0):
+  - IISwiftBaseUti/IIBaseUti (1.1.0):
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICoreExtension (1.0.0):
+  - IISwiftBaseUti/IICoreExtension (1.1.0):
     - SnapKit (~> 4.2.0)
   - SnapKit (4.2.0)
 
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IISwiftBaseUti: 8645481c8c572b3d19542792139849e782f4f470
+  IISwiftBaseUti: b1128943a1a7f30298bdcecf537d66f4bffa6156
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: e7e31cda7e1040427caf87360e3b0b1e70932e1e

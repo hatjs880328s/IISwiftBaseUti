@@ -9,7 +9,7 @@
 import UIKit
 
 var blockActionDict: [String : ( () -> Void )] = [:]
-extension UIView {
+public extension UIView {
     
     /// 获取cell所在的tableview
     public func cellTabViewController() -> UITableView? {
