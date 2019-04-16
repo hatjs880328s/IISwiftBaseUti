@@ -1,11 +1,34 @@
 PODS:
-  - IISwiftBaseUti (1.1.5):
-    - IISwiftBaseUti/IIBaseUti (= 1.1.5)
-    - IISwiftBaseUti/IICoreExtension (= 1.1.5)
+  - III18N (0.7.0)
+  - IISwiftBaseUti (1.1.6):
+    - III18N
+    - IISwiftBaseUti/IIBaseUti (= 1.1.6)
+    - IISwiftBaseUti/IICacheStorage (= 1.1.6)
+    - IISwiftBaseUti/IICoreExtension (= 1.1.6)
+    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.1.6)
+    - IISwiftBaseUti/IIRecognition (= 1.1.6)
+    - IISwiftBaseUti/YYCache (= 1.1.6)
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIBaseUti (1.1.5):
+  - IISwiftBaseUti/IIBaseUti (1.1.6):
+    - III18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICoreExtension (1.1.5):
+  - IISwiftBaseUti/IICacheStorage (1.1.6):
+    - III18N
+    - IISwiftBaseUti/YYCache
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IICoreExtension (1.1.6):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIHardWareAuthRequest (1.1.6):
+    - III18N
+    - IISwiftBaseUti/IIBaseUti
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIRecognition (1.1.6):
+    - III18N
+    - IISwiftBaseUti/IICoreExtension
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/YYCache (1.1.6):
+    - III18N
     - SnapKit (~> 4.2.0)
   - SnapKit (4.2.0)
 
@@ -14,6 +37,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - III18N
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -21,7 +45,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IISwiftBaseUti: a799c86cc4c290312cce60dc16a426a8022b36c3
+  III18N: a64e35e4f9ba88d87360ab0088d829dff71fecfc
+  IISwiftBaseUti: b898f60418193b005514f04154caac2c7eed652e
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: e7e31cda7e1040427caf87360e3b0b1e70932e1e

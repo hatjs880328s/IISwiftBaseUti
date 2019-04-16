@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISwiftBaseUti'
-  s.version          = '1.1.5'
+  s.version          = '1.1.6'
   s.summary          = 'IISwift基础服务'
 
 # This description is used to generate tags and improve search results.
@@ -53,15 +53,15 @@ Pod::Spec.new do |s|
       ss.source_files = 'IISwiftBaseUti/Classes/IICoreExtension/*.*'
   end
 
-  # s.subspec 'IICacheStorage' do |ss|
-      #  ss.dependency 'IISwiftBaseUti/YYCache'
-      #   ss.source_files = 'IISwiftBaseUti/Classes/IICacheStorage/*.*'
-      #end
+   s.subspec 'IICacheStorage' do |ss|
+        ss.dependency 'IISwiftBaseUti/YYCache'
+         ss.source_files = 'IISwiftBaseUti/Classes/IICacheStorage/*.*'
+   end
 
-  # s.subspec 'IIHardWareAuthRequest' do |ss|
-      # ss.dependency 'IISwiftBaseUti/IIBaseUti'
-      # ss.source_files = 'IISwiftBaseUti/Classes/IIHardWareAuthRequest/*.*'
-      #end
+   s.subspec 'IIHardWareAuthRequest' do |ss|
+       ss.dependency 'IISwiftBaseUti/IIBaseUti'
+       ss.source_files = 'IISwiftBaseUti/Classes/IIHardWareAuthRequest/*.*'
+      end
 
   #s.subspec 'IIImageUtility' do |ss|
       # ss.dependency 'IISwiftBaseUti/IIBaseUti'
@@ -69,14 +69,14 @@ Pod::Spec.new do |s|
       #  ss.source_files = 'IISwiftBaseUti/Classes/IIImageUtility/*.*'
       #end
 
-  #s.subspec 'IIRecognition' do |ss|
-      #   ss.dependency 'IISwiftBaseUti/IICoreExtension'
-      #   ss.source_files = 'IISwiftBaseUti/Classes/IIRecognition/*.*'
-      #end
+  s.subspec 'IIRecognition' do |ss|
+         ss.dependency 'IISwiftBaseUti/IICoreExtension'
+         ss.source_files = 'IISwiftBaseUti/Classes/IIRecognition/*.*'
+      end
 
-  #s.subspec 'YYCache' do |ss|
-      #    ss.source_files = 'IISwiftBaseUti/Classes/YYCache/*.*'
-      #end
+  s.subspec 'YYCache' do |ss|
+         ss.source_files = 'IISwiftBaseUti/Classes/YYCache/*.*'
+      end
 
   s.swift_version = '4.2'
   
@@ -88,6 +88,6 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   #s.dependency 'SDWebImage', '~> 4.4.5'
   s.dependency 'SnapKit', '~> 4.2.0'
-  #s.dependency 'III18N'
+  s.dependency 'III18N'
 
 end
