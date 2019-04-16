@@ -9,7 +9,6 @@
 import Foundation
 import Photos
 
-@_exported import IISwiftBaseUti
 @_exported import III18N
 
 /*
@@ -22,7 +21,7 @@ import Photos
         直接使用异步requestauth方法获取权限根据权限做出相应的处理
  
  */
-class IIPhotoAuthRequest: IIHardwareAuthRequest {
+public class IIPhotoAuthRequest: IIHardwareAuthRequest {
     
     /// 判定获取相册权限
     ///
@@ -30,7 +29,7 @@ class IIPhotoAuthRequest: IIHardwareAuthRequest {
     ///   - successAction: 用户点击开通权限
     ///   - failAction: 用户点击取消
     ///   - nilAction: 用户已经做出了选择
-    @objc func progressPhotoAuth(successAction:@escaping () -> Void, failAction:@escaping () -> Void, nilAction:@escaping () -> Void) {
+    @objc public func progressPhotoAuth(successAction:@escaping () -> Void, failAction:@escaping () -> Void, nilAction:@escaping () -> Void) {
         self.successAction = successAction
         self.failAction = failAction
         self.nilAction = nilAction
@@ -42,7 +41,7 @@ class IIPhotoAuthRequest: IIHardwareAuthRequest {
     }
     
     /// ios11以上的处理方式
-    func iOS11Plus() {
+    public func iOS11Plus() {
         let authState = PHPhotoLibrary.authorizationStatus()
         // 第一次使用
         if authState == .notDetermined {
@@ -57,7 +56,7 @@ class IIPhotoAuthRequest: IIHardwareAuthRequest {
     }
     
     /// ios8以上的处理方式
-    func iOS8Plue() {
+    public func iOS8Plue() {
         let authState = PHPhotoLibrary.authorizationStatus()
         self.switchProgressAuth(state: authState)
     }

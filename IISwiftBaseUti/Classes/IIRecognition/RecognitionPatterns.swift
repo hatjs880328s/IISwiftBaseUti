@@ -9,10 +9,10 @@
 import Foundation
 
 /// recognition - rule
-typealias RECOGNITIONRULE = (name: String, pattern: String, type: RecognitionInsType)
+public typealias RECOGNITIONRULE = (name: String, pattern: String, type: RecognitionInsType)
 
 /// 规则类
-class RecognitionPatterns: NSObject {
+public class RecognitionPatterns: NSObject {
     
     public var patterns: [RECOGNITIONRULE] = []
     

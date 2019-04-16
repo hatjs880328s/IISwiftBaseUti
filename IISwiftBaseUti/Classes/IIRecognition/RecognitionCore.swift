@@ -31,12 +31,12 @@ import Foundation
  参考文档地址：https://www.jianshu.com/p/56da83a4e0ab
  */
 
-class RecognitionCore: NSObject {
+public class RecognitionCore: NSObject {
     
     private static var shareInstance: RecognitionCore!
     
     /// rules
-    let patterns = RecognitionPatterns.getInstance().patterns
+    public let patterns = RecognitionPatterns.getInstance().patterns
     
     private override init() {
         super.init()

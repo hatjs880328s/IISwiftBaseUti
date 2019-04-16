@@ -19,26 +19,26 @@ import Foundation
  
  */
 
-class IIHardwareAuthRequest: NSObject, UIAlertViewDelegate {
+public class IIHardwareAuthRequest: NSObject, UIAlertViewDelegate {
     
     /// 获取到权限回调
-    var successAction: (() -> Void)!
+    public var successAction: (() -> Void)!
     /// 获取失败回调
-    var failAction:(() -> Void)!
+    public var failAction:(() -> Void)!
     /// 已经做出判断的回调
-    var nilAction:(() -> Void)!
+    public var nilAction:(() -> Void)!
     /// 默认tag数值
-    let defaultTag = 10_010
+    public let defaultTag = 10_010
 
     /// 跳转到配置页面
-    func openSettingPage() {
+    public func openSettingPage() {
         if let url = URL(string: UIApplication.openSettingsURLString) {
             UIApplication.shared.openURL(url)
         }
     }
 
     /// really wanna cry
-    func openSysSettingPage() {
+    public func openSysSettingPage() {
         let jokeStr = "QXBwLVByZWZzOnJvb3Q9R" + "2VuZXJhbA=="
         guard let realJumpStr = Data(base64Encoded: jokeStr) else { return }
         guard let realStr = String(data: realJumpStr, encoding: String.Encoding.ascii) else { return }

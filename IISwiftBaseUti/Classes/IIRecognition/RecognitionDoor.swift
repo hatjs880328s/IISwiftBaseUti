@@ -9,7 +9,7 @@
 import Foundation
 
 /// 识别入口类[lifecicle]
-class RecognitionDoor: NSObject {
+public class RecognitionDoor: NSObject {
     
     /// 是否开启服务
     private var isOpenService: Bool = true
@@ -27,17 +27,17 @@ class RecognitionDoor: NSObject {
         return self.instance
     }
     
-    @objc func startService() {
+    @objc public func startService() {
         self.isOpenService = true
     }
     
-    @objc func stopService() {
+    @objc public func stopService() {
         self.isOpenService = false
     }
 }
 
 // MARK: - [真正的业务逻辑]
-extension RecognitionDoor {
+public extension RecognitionDoor {
     
     /// 识别方法
     ///

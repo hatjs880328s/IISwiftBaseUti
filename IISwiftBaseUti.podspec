@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISwiftBaseUti'
-  s.version          = '1.1.6'
+  s.version          = '1.1.7'
   s.summary          = 'IISwift基础服务'
 
 # This description is used to generate tags and improve search results.
@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'Photos'
   #s.dependency 'SDWebImage', '~> 4.4.5'
   s.dependency 'SnapKit', '~> 4.2.0'
   s.dependency 'III18N'

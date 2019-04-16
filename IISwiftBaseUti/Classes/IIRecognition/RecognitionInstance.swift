@@ -9,7 +9,7 @@
 import Foundation
 
 /// 规则类别
-@objc enum RecognitionInsType: Int {
+@objc public enum RecognitionInsType: Int {
     case phoneNumber
     case date
     case week
@@ -24,21 +24,21 @@ import Foundation
 }
 
 /// 识别出来的结构体信息
-@objc class RecognitionInstance: NSObject {
+@objc public class RecognitionInstance: NSObject {
     
-    @objc var range: NSRange = NSRange(location: 0, length: 0)
-    @objc var type: RecognitionInsType = .week
-    @objc var rangeInfo: String = ""
+    @objc public var range: NSRange = NSRange(location: 0, length: 0)
+    @objc public var type: RecognitionInsType = .week
+    @objc public var rangeInfo: String = ""
     // 后期处理此date信息
-    @objc var realDateInfo: Date = Date()
+    @objc public var realDateInfo: Date = Date()
     
-    init(range: NSRange, type: RecognitionInsType, rangeInfo: String) {
+    public init(range: NSRange, type: RecognitionInsType, rangeInfo: String) {
         self.range = range
         self.type = type
         self.rangeInfo = rangeInfo
     }
     
-    func progressDate(dateInfo: Date) {
+    public func progressDate(dateInfo: Date) {
         self.realDateInfo = dateInfo
     }
 }
