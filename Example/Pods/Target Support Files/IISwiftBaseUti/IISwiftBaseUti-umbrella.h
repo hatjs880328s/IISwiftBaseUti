@@ -10,11 +10,6 @@
 #endif
 #endif
 
-#import "IIImageUtilityOC.h"
-#import "YYCache.h"
-#import "YYDiskCache.h"
-#import "YYKVStorage.h"
-#import "YYMemoryCache.h"
 
 FOUNDATION_EXPORT double IISwiftBaseUtiVersionNumber;
 FOUNDATION_EXPORT const unsigned char IISwiftBaseUtiVersionString[];

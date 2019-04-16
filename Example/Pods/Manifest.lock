@@ -1,48 +1,12 @@
 PODS:
-  - III18N (0.7.0)
-  - IISwiftBaseUti (1.1.3):
-    - III18N
-    - IISwiftBaseUti/IIBaseUti (= 1.1.3)
-    - IISwiftBaseUti/IICacheStorage (= 1.1.3)
-    - IISwiftBaseUti/IICoreExtension (= 1.1.3)
-    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.1.3)
-    - IISwiftBaseUti/IIImageUtility (= 1.1.3)
-    - IISwiftBaseUti/IIRecognition (= 1.1.3)
-    - IISwiftBaseUti/YYCache (= 1.1.3)
-    - SDWebImage (~> 4.4.5)
+  - IISwiftBaseUti (1.1.5):
+    - IISwiftBaseUti/IIBaseUti (= 1.1.5)
+    - IISwiftBaseUti/IICoreExtension (= 1.1.5)
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIBaseUti (1.1.3):
-    - III18N
-    - SDWebImage (~> 4.4.5)
+  - IISwiftBaseUti/IIBaseUti (1.1.5):
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICacheStorage (1.1.3):
-    - III18N
-    - IISwiftBaseUti/YYCache
-    - SDWebImage (~> 4.4.5)
+  - IISwiftBaseUti/IICoreExtension (1.1.5):
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICoreExtension (1.1.3):
-    - III18N
-    - SDWebImage (~> 4.4.5)
-    - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIHardWareAuthRequest (1.1.3):
-    - III18N
-    - SDWebImage (~> 4.4.5)
-    - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIImageUtility (1.1.3):
-    - III18N
-    - SDWebImage (~> 4.4.5)
-    - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIRecognition (1.1.3):
-    - III18N
-    - SDWebImage (~> 4.4.5)
-    - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/YYCache (1.1.3):
-    - III18N
-    - SDWebImage (~> 4.4.5)
-    - SnapKit (~> 4.2.0)
-  - SDWebImage (4.4.6):
-    - SDWebImage/Core (= 4.4.6)
-  - SDWebImage/Core (4.4.6)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -50,8 +14,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - III18N
-    - SDWebImage
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -59,9 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  III18N: a64e35e4f9ba88d87360ab0088d829dff71fecfc
-  IISwiftBaseUti: 2a79253145eed03b09621135fcec222ed95fae0f
-  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  IISwiftBaseUti: a799c86cc4c290312cce60dc16a426a8022b36c3
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: e7e31cda7e1040427caf87360e3b0b1e70932e1e
