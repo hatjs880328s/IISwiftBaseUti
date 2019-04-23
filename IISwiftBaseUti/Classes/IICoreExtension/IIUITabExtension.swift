@@ -69,7 +69,7 @@ public class IIExcTabEmptyVw: UIView {
         bgVw.addSubview(createBtn)
         bgVw.addSubview(txtLb)
         createBtn.snp.makeConstraints { (make) in
-            make.centerY.equalTo(self.snp.centerY).offset(0)
+            make.top.equalTo(10)
             make.centerX.equalTo(self.snp.centerX)
             make.width.equalTo(61)
             make.height.equalTo(61)
@@ -82,8 +82,8 @@ public class IIExcTabEmptyVw: UIView {
         txtLb.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp.centerX)
             make.top.equalTo(createBtn.snp.bottom).offset(10)
-            make.left.equalTo(0)
-            make.right.equalTo(0)
+            make.width.equalTo(250)
+            make.height.equalTo(20)
         }
         txtLb.font = UIFont.systemFont(ofSize: 14)
         txtLb.textColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1)
