@@ -14,13 +14,13 @@ import Foundation
 import EventKit
 
 /// 请求日历访问权限处理
-public class IICalendarAuthRuequest: IIHardwareAuthRequest {
+@objc public class IICalendarAuthRuequest: IIHardwareAuthRequest {
 
-    public override init() {
+    @objc public override init() {
         super.init()
     }
 
-    public func requestAuth(endAction: @escaping (_ result: Bool) -> Void) {
+    @objc public func requestAuth(endAction: @escaping (_ result: Bool) -> Void) {
         let store = EKEventStore()
         store.requestAccess(to: EKEntityType.event) { (granted, _) in
             if granted {

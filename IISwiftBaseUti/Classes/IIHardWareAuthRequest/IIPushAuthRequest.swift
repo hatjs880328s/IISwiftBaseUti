@@ -14,10 +14,10 @@ import UIKit
 import UserNotifications
 
 // MARK: 系统推送权限处理
-public class IIPushAuthRequest: IIHardwareAuthRequest {
+@objc public class IIPushAuthRequest: IIHardwareAuthRequest {
 
     /// 获取是否有推送权限
-    public static func requestPUSHAuth(endAction: @escaping (_ result: Bool) -> Void) {
+    @objc public static func requestPUSHAuth(endAction: @escaping (_ result: Bool) -> Void) {
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().getNotificationSettings { (setting) in
                 if setting.authorizationStatus == UNAuthorizationStatus.denied {
