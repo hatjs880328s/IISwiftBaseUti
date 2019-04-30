@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISwiftBaseUti'
-  s.version          = '1.2.2'
+  s.version          = '1.3.0'
   s.summary          = 'IISwift基础服务'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
      8.硬件权限获取
      9.图片Uti
     10.正则库
+    11.IIAspects
                        DESC
 
   s.homepage         = 'https://github.com/hatjs880328s/IISwiftBaseUti'
@@ -73,6 +74,10 @@ Pod::Spec.new do |s|
          ss.dependency 'IISwiftBaseUti/IICoreExtension'
          ss.source_files = 'IISwiftBaseUti/Classes/IIRecognition/*.*'
       end
+
+  s.subspec 'IIAspects' do |ss|
+      ss.source_files = 'IISwiftBaseUti/Classes/IIAspects/*.*'
+  end
 
   s.subspec 'YYCache' do |ss|
          ss.source_files = 'IISwiftBaseUti/Classes/YYCache/*.*'
