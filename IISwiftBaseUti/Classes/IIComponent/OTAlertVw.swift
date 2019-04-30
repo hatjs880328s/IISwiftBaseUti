@@ -7,6 +7,7 @@
 //
 
 import Foundation
+@_exported import III18N
 
 class OTAlertVw: NSObject {
 

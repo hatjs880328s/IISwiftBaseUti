@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
      9.图片Uti
     10.正则库
     11.IIAspects
+    12.IIComponent
                        DESC
 
   s.homepage         = 'https://github.com/hatjs880328s/IISwiftBaseUti'
@@ -76,9 +77,7 @@ Pod::Spec.new do |s|
       end
 
   s.subspec 'IIComponent' do |ss|
-      ss.dependency 'IISwiftBaseUti/IICoreExtension'
-      ss.dependency 'IISwiftBaseUti/IIAspects'
-      ss.source_files = 'IISwiftBaseUti/Classes/IIRecognition/*.*'
+      ss.source_files = 'IISwiftBaseUti/Classes/IIComponent/*.*'
   end
 
   s.subspec 'IIAspects' do |ss|
