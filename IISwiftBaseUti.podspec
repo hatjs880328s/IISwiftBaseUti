@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISwiftBaseUti'
-  s.version          = '1.3.1'
+  s.version          = '1.3.2'
   s.summary          = 'IISwift基础服务'
 
 # This description is used to generate tags and improve search results.
@@ -76,6 +76,8 @@ Pod::Spec.new do |s|
       end
 
   s.subspec 'IIComponent' do |ss|
+      ss.dependency 'IISwiftBaseUti/IICoreExtension'
+      ss.dependency 'IISwiftBaseUti/IIAspects'
       ss.source_files = 'IISwiftBaseUti/Classes/IIRecognition/*.*'
   end
 
