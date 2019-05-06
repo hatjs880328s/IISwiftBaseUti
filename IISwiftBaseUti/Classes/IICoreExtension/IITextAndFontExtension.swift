@@ -13,7 +13,7 @@
 import Foundation
 
 public class IITextAndFontExtension: NSObject {
-    
+
     /// 根据文字实际长度和需求长度返回合适的uifont[最多是几行]
     ///
     /// - Parameters:
@@ -39,7 +39,7 @@ public class IITextAndFontExtension: NSObject {
         }
         return CGFloat(Int(textLength / eachLineWidth) + 1) * eachLineHeight
     }
-    
+
     /// 计算文字宽度
     ///
     /// - Parameters:
@@ -48,7 +48,21 @@ public class IITextAndFontExtension: NSObject {
     /// - Returns: 宽度
     @objc public func textLength(text: String, font: UIFont) -> CGFloat {
         let attributes = [kCTFontAttributeName: font]
-        let leftNameSize = (text as NSString).boundingRect(with: CGSize(width: 1_000, height: 25), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attributes as [NSAttributedString.Key: Any], context: nil)
+        let leftNameSize = (text as NSString).boundingRect(with: CGSize(width: 1_00000, height: 25), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attributes as [NSAttributedString.Key: Any], context: nil)
         return leftNameSize.width + 5
+    }
+
+    /// 在源字符串中查找一共有多少目标字符串
+    @objc public func getDirectStrCount(originTxt: String, itemStr: String, count: Int = 0) -> Int {
+        let range = (originTxt as NSString).range(of: itemStr)
+        var midcount = count
+        if range.location == NSNotFound {
+            return midcount
+        } else {
+            midcount += 1
+            //替换掉查找到的目标并递归
+            let midStr = (originTxt as NSString).replacingCharacters(in: range, with: "")
+            return self.getDirectStrCount(originTxt: midStr, itemStr: itemStr, count: midcount)
+        }
     }
 }
