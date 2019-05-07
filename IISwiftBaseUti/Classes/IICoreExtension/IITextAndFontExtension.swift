@@ -47,9 +47,23 @@ public class IITextAndFontExtension: NSObject {
     ///   - font: font
     /// - Returns: 宽度
     @objc public func textLength(text: String, font: UIFont) -> CGFloat {
-        let attributes = [kCTFontAttributeName: font]
-        let leftNameSize = (text as NSString).boundingRect(with: CGSize(width: 1_00000, height: 25), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attributes as [NSAttributedString.Key: Any], context: nil)
+        let style = NSMutableParagraphStyle()
+        style.alignment = NSTextAlignment.left
+        style.lineBreakMode = NSLineBreakMode.byWordWrapping
+        let attributes = [NSAttributedString.Key.font: font, NSAttributedString.Key.paragraphStyle: style]
+        let leftNameSize = (text as NSString).boundingRect(with: CGSize(width: 1_0000, height: 25), options: [NSStringDrawingOptions.usesFontLeading, NSStringDrawingOptions.usesLineFragmentOrigin], attributes: attributes as [NSAttributedString.Key: Any], context: nil)
         return leftNameSize.width + 5
+    }
+
+    /// 使用label自适应高度计算高度
+    @objc public func textHeightCalByLabel(realDes: String, font: UIFont, lineWeight: CGFloat) -> CGFloat {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.text = realDes
+        label.font = font
+        let size = label.sizeThatFits(CGSize(width: lineWeight, height: CGFloat(MAXFLOAT)))
+        return size.height
     }
 
     /// 在源字符串中查找一共有多少目标字符串
