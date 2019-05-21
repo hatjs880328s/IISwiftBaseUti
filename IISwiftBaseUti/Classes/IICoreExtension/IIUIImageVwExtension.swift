@@ -13,7 +13,7 @@
 
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
 
     /// 使imageview可以设置tintcolor
     @objc func setRenderImg() {
