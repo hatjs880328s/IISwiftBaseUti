@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## III18N
+## II18N
 
 Copyright (c) 2019 hatjs880328s <shanwzh@inspur.com>
 
