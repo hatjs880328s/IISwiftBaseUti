@@ -1,44 +1,54 @@
 PODS:
   - III18N (0.7.0)
-  - IISwiftBaseUti (1.3.4):
+  - IISwiftBaseUti (1.3.12):
     - III18N
-    - IISwiftBaseUti/IIAspects (= 1.3.4)
-    - IISwiftBaseUti/IIBaseUti (= 1.3.4)
-    - IISwiftBaseUti/IICacheStorage (= 1.3.4)
-    - IISwiftBaseUti/IIComponent (= 1.3.4)
-    - IISwiftBaseUti/IICoreExtension (= 1.3.4)
-    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.3.4)
-    - IISwiftBaseUti/IIRecognition (= 1.3.4)
-    - IISwiftBaseUti/YYCache (= 1.3.4)
+    - IISwiftBaseUti/IIAspects (= 1.3.12)
+    - IISwiftBaseUti/IIBaseUti (= 1.3.12)
+    - IISwiftBaseUti/IICacheStorage (= 1.3.12)
+    - IISwiftBaseUti/IIComponent (= 1.3.12)
+    - IISwiftBaseUti/IICoreExtension (= 1.3.12)
+    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.3.12)
+    - IISwiftBaseUti/IIRecognition (= 1.3.12)
+    - IISwiftBaseUti/YYCache (= 1.3.12)
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIAspects (1.3.4):
-    - III18N
-    - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIBaseUti (1.3.4):
+    - Toast
+  - IISwiftBaseUti/IIAspects (1.3.12):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICacheStorage (1.3.4):
+    - Toast
+  - IISwiftBaseUti/IIBaseUti (1.3.12):
+    - III18N
+    - SnapKit (~> 4.2.0)
+    - Toast
+  - IISwiftBaseUti/IICacheStorage (1.3.12):
     - III18N
     - IISwiftBaseUti/YYCache
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIComponent (1.3.4):
+    - Toast
+  - IISwiftBaseUti/IIComponent (1.3.12):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICoreExtension (1.3.4):
+    - Toast
+  - IISwiftBaseUti/IICoreExtension (1.3.12):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIHardWareAuthRequest (1.3.4):
+    - Toast
+  - IISwiftBaseUti/IIHardWareAuthRequest (1.3.12):
     - III18N
     - IISwiftBaseUti/IIBaseUti
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIRecognition (1.3.4):
+    - Toast
+  - IISwiftBaseUti/IIRecognition (1.3.12):
     - III18N
     - IISwiftBaseUti/IICoreExtension
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/YYCache (1.3.4):
+    - Toast
+  - IISwiftBaseUti/YYCache (1.3.12):
     - III18N
     - SnapKit (~> 4.2.0)
+    - Toast
   - SnapKit (4.2.0)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
   - IISwiftBaseUti (from `../`)
@@ -47,6 +57,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - III18N
     - SnapKit
+    - Toast
 
 EXTERNAL SOURCES:
   IISwiftBaseUti:
@@ -54,9 +65,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   III18N: a64e35e4f9ba88d87360ab0088d829dff71fecfc
-  IISwiftBaseUti: cba34300d88c0cd0abba273643350cd265938654
+  IISwiftBaseUti: 6a02f32381e1aa245a7e9b5d6a085e1b8e4e8c9c
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
 PODFILE CHECKSUM: e7e31cda7e1040427caf87360e3b0b1e70932e1e
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0.rc.2
