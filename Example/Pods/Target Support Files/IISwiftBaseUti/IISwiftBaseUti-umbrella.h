@@ -11,7 +11,6 @@
 #endif
 
 #import "Aspects.h"
-#import "IICoreExtensionHeader.h"
 #import "YYCache.h"
 #import "YYDiskCache.h"
 #import "YYKVStorage.h"

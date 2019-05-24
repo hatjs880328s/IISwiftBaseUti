@@ -10,11 +10,6 @@ import UIKit
 
 var blockActionDict: [String : ( () -> Void )] = [:]
 public extension UIView {
-
-    /// 替换uti里面的toast
-    public static func showToast(_ str: String) {
-        UIApplication.shared.keyWindow?.makeToast(str, duration: 1.0, position: CSToastPositionCenter)
-    }
     
     /// 获取cell所在的tableview
     public func cellTabViewController() -> UITableView? {
