@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//  
+//
 //  IISearchBar.swift
 //  impcloud_dev
 //
 //  Created by Noah_Shan on 2019/2/28.
 //  Copyright © 2018 Inpur. All rights reserved.
-//  
+//
 //  *******************************************
 //
 
@@ -15,7 +15,7 @@ import RxSwift
 import RxCocoa
 import SnapKit
 
-protocol IISearchBarDelegate: NSObjectProtocol {
+public protocol IISearchBarDelegate: NSObjectProtocol {
 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
 
@@ -30,18 +30,18 @@ protocol IISearchBarDelegate: NSObjectProtocol {
 }
 
 /// 自定义search bar
-class IISearchBar: UIView {
+public class IISearchBar: UIView {
 
-    var field: UITextField = UITextField()
+    public var field: UITextField = UITextField()
 
-    weak var del: IISearchBarDelegate?
+    public weak var del: IISearchBarDelegate?
 
     let leftImg = UIButton()
 
     /// 是否显示放大镜
-    var showSearchIcon = false
+    public var showSearchIcon = false
 
-    init(frame: CGRect, showSearchIcon: Bool = false) {
+    public init(frame: CGRect, showSearchIcon: Bool = false) {
         super.init(frame: frame)
         self.showSearchIcon = showSearchIcon
         createVw()
@@ -80,7 +80,7 @@ class IISearchBar: UIView {
             .throttle(0.5, scheduler: MainScheduler.instance)
             .subscribe { [weak self] events in
                 self?.del?.each5MillSecsTxtInfo(events.element ?? "")
-            }
+        }
     }
 }
 
