@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISwiftBaseUti'
-  s.version          = '1.3.15'
+  s.version          = '1.3.16'
   s.summary          = 'IISwift基础服务'
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,7 @@ Pod::Spec.new do |s|
     10.正则库
     11.IIAspects
     12.IIComponent
+    13.IISearchBar[引入RX]
                        DESC
 
   s.homepage         = 'https://github.com/hatjs880328s/IISwiftBaseUti'
@@ -84,6 +85,10 @@ Pod::Spec.new do |s|
       ss.source_files = 'IISwiftBaseUti/Classes/IIAspects/*.*'
   end
 
+  s.subspec 'IISearchBar' do |ss|
+      ss.source_files = 'IISwiftBaseUti/Classes/IISearchBar/*.*'
+  end
+
   s.subspec 'YYCache' do |ss|
          ss.source_files = 'IISwiftBaseUti/Classes/YYCache/*.*'
       end
@@ -99,5 +104,9 @@ Pod::Spec.new do |s|
   #s.dependency 'SDWebImage', '~> 4.4.5'
   s.dependency 'SnapKit', '~> 4.2.0'
   s.dependency 'II18N'
+
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  s.dependency 'RxDataSources'
 
 end

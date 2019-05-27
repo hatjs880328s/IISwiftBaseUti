@@ -1,8 +1,8 @@
 {
   "name": "IISwiftBaseUti",
-  "version": "1.3.15",
+  "version": "1.3.16",
   "summary": "IISwift基础服务",
-  "description": "包含：\n 1.多种破次方排序方法（heapsort/mergesort)\n 2.自定义轻量级队列（IIQueue)\n 3.GCD二次封装（GCGUtils）\n 4.白名单模块IIWhiteModule\n 5.oc之Uitlity集成\n 6.Swift_core_extension\n 7.Swift缓存模块\n 8.硬件权限获取\n 9.图片Uti\n10.正则库\n11.IIAspects\n12.IIComponent",
+  "description": "包含：\n 1.多种破次方排序方法（heapsort/mergesort)\n 2.自定义轻量级队列（IIQueue)\n 3.GCD二次封装（GCGUtils）\n 4.白名单模块IIWhiteModule\n 5.oc之Uitlity集成\n 6.Swift_core_extension\n 7.Swift缓存模块\n 8.硬件权限获取\n 9.图片Uti\n10.正则库\n11.IIAspects\n12.IIComponent\n13.IISearchBar",
   "homepage": "https://github.com/hatjs880328s/IISwiftBaseUti",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IISwiftBaseUti.git",
-    "tag": "1.3.15"
+    "tag": "1.3.16"
   },
   "platforms": {
     "ios": "8.0"
@@ -29,6 +29,15 @@
       "~> 4.2.0"
     ],
     "II18N": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "RxDataSources": [
 
     ]
   },
@@ -75,6 +84,10 @@
     {
       "name": "IIAspects",
       "source_files": "IISwiftBaseUti/Classes/IIAspects/*.*"
+    },
+    {
+      "name": "IISearchBar",
+      "source_files": "IISwiftBaseUti/Classes/IISearchBar/*.*"
     },
     {
       "name": "YYCache",
