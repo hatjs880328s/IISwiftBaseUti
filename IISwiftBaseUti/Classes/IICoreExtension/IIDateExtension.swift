@@ -26,6 +26,16 @@ public extension Foundation.Date {
 
     }
 
+    /**
+     返回到某一时间点的时间间距
+
+     - parameter other:时间点
+     - returns: 时间间隔
+     */
+    public func distances(to other: Foundation.Date) -> TimeInterval {
+        return other - self
+    }
+
     /// 当前日期对象是否和某一天相等 检测年月日
     public func isEqual2(today: Date) -> Bool {
         return self.year == today.year && self.month == today.month && self.days == today.days
@@ -631,26 +641,18 @@ public extension Foundation.Date {
     }
 
 }
-extension Foundation.Date: Strideable {
-    /**
-     返回到某一时间点的时间间距
-
-     - parameter other:时间点
-     - returns: 时间间隔
-     */
-    public func distance(to other: Foundation.Date) -> TimeInterval {
-        return other - self
-    }
-    /**
-     快进秒数
-
-     - parameter other:需要快进的秒
-     - returns: 快进之后的时间
-     */
-    public func advanced(by n: TimeInterval) -> Date {
-        return type(of: self).init(timeIntervalSinceReferenceDate: self.timeIntervalSinceReferenceDate + n)
-    }
-}
+//extension Foundation.Date: Strideable {
+//
+//    /**
+//     快进秒数
+//
+//     - parameter other:需要快进的秒
+//     - returns: 快进之后的时间
+//     */
+//    public func advanced(by n: TimeInterval) -> Date {
+//        return type(of: self).init(timeIntervalSinceReferenceDate: self.timeIntervalSinceReferenceDate + n)
+//    }
+//}
 // MARK: Arithmetic
 /// 加
 public func + (date: Foundation.Date, timeInterval: Int) -> Foundation.Date {
