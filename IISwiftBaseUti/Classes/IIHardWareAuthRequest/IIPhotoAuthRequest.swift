@@ -77,6 +77,9 @@ public class IIPhotoAuthRequest: IIHardwareAuthRequest {
         case .restricted:
             //家长控制一类的约束
             deniedRequestAlert()
+        default:
+            // ios14 (xcode 12) 新增的个配置 limited
+            deniedRequestAlert()
         }
     }
     
