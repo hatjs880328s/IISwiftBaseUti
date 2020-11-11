@@ -69,7 +69,7 @@ public class IIExcTabEmptyVw: UIView {
         bgVw.addSubview(createBtn)
         bgVw.addSubview(txtLb)
         createBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(10)
+            make.top.equalTo(0)
             make.centerX.equalTo(self.snp.centerX)
             make.width.equalTo(290)
             make.height.equalTo(200)
