@@ -35,7 +35,7 @@ public class IIUITabExtension {
 /// 邮箱列表空列表vw
 public class IIExcTabEmptyVw: UIView {
 
-    public var createBtn = UIButton()
+    public var createBtn = UIImageView()
 
     public var txtLb: UILabel = UILabel()
 
@@ -74,14 +74,10 @@ public class IIExcTabEmptyVw: UIView {
             make.width.equalTo(290)
             make.height.equalTo(200)
         }
-        if self.imgName == nil {
-            createBtn.setImage(UIImage(named: "webex_nocontent"), for: UIControl.State.normal)
-        } else {
-            createBtn.setImage(UIImage(named: self.imgName ?? ""), for: UIControl.State.normal)
-        }
+        createBtn.image = UIImage(named: self.imgName ?? "webex_nocontent")
         txtLb.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp.centerX)
-            make.bottom.equalTo(createBtn.snp.bottom)
+            make.top.equalTo(createBtn.snp.bottom)
             make.width.equalTo(250)
             make.height.equalTo(20)
         }
