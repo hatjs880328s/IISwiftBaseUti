@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IISwiftBaseUti'
-  s.version          = '1.4.3'
+  s.version          = '1.4.4'
   s.summary          = 'IISwift基础服务'
 
 # This description is used to generate tags and improve search results.
