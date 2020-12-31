@@ -67,8 +67,11 @@ public class IIPhotoAuthRequest: IIHardwareAuthRequest {
         case .notDetermined:
             //[用户还没有做出选择]直接去请求即可
             //showRequestAlert()
-            PHPhotoLibrary.requestAuthorization { (_) in
-                
+            PHPhotoLibrary.requestAuthorization {
+                if $0 != .authorized { return }
+                GCDUtils.toMianThreadProgressSome(youraction: {
+                    self.successAction()
+                })
             }
         case .denied:
             //用户明确拒绝了使用相册的权限
