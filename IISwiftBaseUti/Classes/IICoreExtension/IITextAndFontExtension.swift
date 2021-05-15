@@ -81,7 +81,7 @@ public class IITextAndFontExtension: NSObject {
     }
     
     /// 计算在某个宽度和字体下，需要多少个文字
-    @objc func calculateChatCount(width: CGFloat, font: UIFont) -> Int {
+    @objc public func calculateChatCount(width: CGFloat, font: UIFont) -> Int {
         let originStr = "天上飘，来5个字"
         let number = 7.0
 
@@ -92,7 +92,7 @@ public class IITextAndFontExtension: NSObject {
     }
 
     /// 计算在某个宽度和字体条件下，第一行文字个数 [originstr: 源字符串 currentstr: 递归执行时需要的str]
-    @objc func calculateChatCount(width: CGFloat, font: UIFont, originStr: String, currentStr: String) -> Int {
+    @objc public func calculateChatCount(width: CGFloat, font: UIFont, originStr: String, currentStr: String) -> Int {
         // 二分法计算
         let originWidth = IITextAndFontExtension().textLength(text: currentStr, font: font)
         if originWidth > width {
